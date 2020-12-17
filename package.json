@@ -1,0 +1,42 @@
+{
+  "name": "electron-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./dist/main.js",
+    "build:main": "tsc",
+    "build:render": "webpack",
+    "build:all": "npm run build:main && npm run build:render"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-loader": "^4.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.12",
+    "@types/redux": "^3.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "electron": "^11.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "html-webpack-plugin": "^4.5.0",
+    "prettier": "^2.2.1",
+    "ts-loader": "^8.0.12",
+    "typescript": "^4.1.3",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  }
+}
